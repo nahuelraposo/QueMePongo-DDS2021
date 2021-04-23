@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ee90504c-e60f-4070-ab1e-dce640df2bf4" name="Default Changelist" comment="" />
+    <list default="true" id="ee90504c-e60f-4070-ab1e-dce640df2bf4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/ejercicio.iws" beforeDir="false" afterPath="$PROJECT_DIR$/ejercicio.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/prenda/Material.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/prenda/Material.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/prenda/Prenda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/prenda/Prenda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/prenda/TipoPrenda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/prenda/TipoPrenda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PrendaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PrendaTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -264,7 +270,7 @@
       <recent name="dominio" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.PrendaTest">
     <configuration selected="false" default="true" type="Applet" factoryName="Applet">
       <module name="" />
       <option name="MAIN_CLASS_NAME" />
@@ -281,13 +287,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrendaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ejercicio" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PrendaTest" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrendaTest.elMaterialDeLasZapatillasConverseEsNullYTiraException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ejercicio" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PrendaTest" />
+      <option name="METHOD_NAME" value="elMaterialDeLasZapatillasConverseEsNullYTiraException" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -303,6 +340,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.PrendaTest" />
+        <item itemvalue="JUnit.PrendaTest.elMaterialDeLasZapatillasConverseEsNullYTiraException" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="StarteamConfiguration">
@@ -342,6 +385,7 @@
       <option name="presentableId" value="Default" />
       <updated>1618796567553</updated>
       <workItem from="1618796569464" duration="5853000" />
+      <workItem from="1619147600208" duration="3364000" />
     </task>
     <servers />
   </component>

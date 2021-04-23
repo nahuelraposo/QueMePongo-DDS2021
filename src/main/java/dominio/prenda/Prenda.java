@@ -31,4 +31,7 @@ public class Prenda {
             throw new PrendaIncompletaException();
     }
 
+    public TipoPrenda getTipoPrenda() {
+        return tipoPrenda;
+    }
 }
