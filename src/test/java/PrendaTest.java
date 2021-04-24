@@ -1,7 +1,8 @@
 import dominio.excepciones.PrendaIncompletaException;
 import dominio.prenda.*;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.function.Executable;
+
+import java.awt.*;
 
 import static dominio.prenda.TipoPrenda.*;
 import static org.junit.jupiter.api.Assertions.*;
@@ -24,18 +25,18 @@ public class PrendaTest {
 
     //MOCKITOS
     private Prenda anteojosDeSol(){
-        return new Prenda(ANTEOJOS,Material.PLASTICO, Color.AMARILLO);
+        return new Prenda(ANTEOJOS,Material.PLASTICO, Color.YELLOW,null);
     }
 
     private Prenda remeraMangasCortasAzul(){
-        return new Prenda(REMERA_MANGA_CORTA, Material.ALGODON, Color.AZUL);
+        return new Prenda(REMERA_MANGA_CORTA, Material.ALGODON, Color.BLUE,null);
     }
 
     private Prenda zapatillasConverse(){
-        return new Prenda(ZAPATILLAS, null, Color.BLANCO);
+        return new Prenda(ZAPATILLAS, null, Color.white,null);
     }
 
     private Prenda polleraAmarilla(){
-        return new Prenda(POLLERA, Material.LYCRA, Color.AMARILLO);
+        return new Prenda(POLLERA, Material.LYCRA, Color.YELLOW,null);
     }
 }
