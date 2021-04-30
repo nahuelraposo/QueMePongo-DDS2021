@@ -29,4 +29,8 @@ public class Prenda {
     public TipoPrenda getTipoPrenda() {
         return tipoPrenda;
     }
+
+    public Trama getTrama(){
+        return trama;
+    }
 }
