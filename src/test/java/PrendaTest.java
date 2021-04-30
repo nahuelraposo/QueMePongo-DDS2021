@@ -25,18 +25,18 @@ public class PrendaTest {
 
     //MOCKITOS
     private Prenda anteojosDeSol(){
-        return new Prenda(ANTEOJOS,Material.PLASTICO, Color.YELLOW,null);
+        return new Prenda(ANTEOJOS,Material.PLASTICO, Color.YELLOW,null,null);
     }
 
     private Prenda remeraMangasCortasAzul(){
-        return new Prenda(REMERA_MANGA_CORTA, Material.ALGODON, Color.BLUE,null);
+        return new Prenda(REMERA_MANGA_CORTA, Material.ALGODON, Color.BLUE,null,null);
     }
 
     private Prenda zapatillasConverse(){
-        return new Prenda(ZAPATILLAS, null, Color.white,null);
+        return new Prenda(ZAPATILLAS, null, Color.white,null,null);
     }
 
     private Prenda polleraAmarilla(){
-        return new Prenda(POLLERA, Material.LYCRA, Color.YELLOW,null);
+        return new Prenda(POLLERA, Material.LYCRA, Color.YELLOW,null,null);
     }
 }

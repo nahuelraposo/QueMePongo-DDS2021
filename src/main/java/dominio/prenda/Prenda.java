@@ -9,14 +9,16 @@ public class Prenda {
     Material material;
     Color colorPrincipal;
     Color colorSecundario;
+    Trama trama;
 
     public Prenda(TipoPrenda tipo, Material materialPrenda,
-                  Color colorPrimario, Color colorSecundario) {
+                  Color colorPrimario, Color colorSecundario, Trama trama) {
         validarAtributos(tipo, materialPrenda, colorPrimario);
         this.tipoPrenda = tipo;
         this.material = materialPrenda;
         this.colorPrincipal = colorPrimario;
         this.colorSecundario = colorSecundario;
+        this.trama = trama;
     }
 
     private void validarAtributos(TipoPrenda tipo, Material materialPrenda, Color colorPrimario) {
