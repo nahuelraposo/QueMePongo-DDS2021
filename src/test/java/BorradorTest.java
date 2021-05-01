@@ -24,28 +24,42 @@ public class BorradorTest {
         assertThrows(RuntimeException.class,()->{prenda3();});
     }
 
+    @Test
+    public void tiraErrorPorqueUnaRemeraNoAdmiteMaterialCuero() {
+        assertThrows(RuntimeException.class,()->{prenda4();});
+    }
+
+
     //MOCKITOS
     private Prenda prenda1(){
-        Borrador borrador1 = new Borrador();
-        borrador1.establecerTipoPrenda(REMERA_MANGA_CORTA);
-        borrador1.establecerMaterial(Material.ALGODON);
-        borrador1.establecerColorPrincipal(Color.YELLOW);
-        return borrador1.crearPrenda();
+        Borrador borrador = new Borrador();
+        borrador.establecerTipoPrenda(REMERA_MANGA_CORTA);
+        borrador.establecerMaterial(Material.ALGODON);
+        borrador.establecerColorPrincipal(Color.YELLOW);
+        return borrador.crearPrenda();
     }
 
     private Prenda prenda2(){
-        Borrador borrador2 = new Borrador();
-        borrador2.establecerTipoPrenda(REMERA_MANGA_CORTA);
-        borrador2.establecerColorPrincipal(Color.YELLOW);
-        return borrador2.crearPrenda();
+        Borrador borrador = new Borrador();
+        borrador.establecerTipoPrenda(REMERA_MANGA_CORTA);
+        borrador.establecerColorPrincipal(Color.YELLOW);
+        return borrador.crearPrenda();
     }
 
     private Prenda prenda3(){
-        Borrador borrador3 = new Borrador();
-        borrador3.establecerMaterial(Material.ALGODON);
-        borrador3.establecerTipoPrenda(REMERA_MANGA_CORTA);
-        borrador3.establecerColorPrincipal(Color.YELLOW);
-        return borrador3.crearPrenda();
+        Borrador borrador = new Borrador();
+        borrador.establecerMaterial(Material.ALGODON);
+        borrador.establecerTipoPrenda(REMERA_MANGA_CORTA);
+        borrador.establecerColorPrincipal(Color.YELLOW);
+        return borrador.crearPrenda();
+    }
+
+    private Prenda prenda4(){
+        Borrador borrador = new Borrador();
+        borrador.establecerTipoPrenda(REMERA_MANGA_CORTA);
+        borrador.establecerMaterial(Material.CUERO);
+        borrador.establecerColorPrincipal(Color.YELLOW);
+        return borrador.crearPrenda();
     }
 
 

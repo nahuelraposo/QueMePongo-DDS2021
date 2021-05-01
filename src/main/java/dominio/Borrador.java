@@ -1,5 +1,6 @@
 package dominio;
 
+import dominio.excepciones.PrendaIncompletaException;
 import dominio.prenda.Material;
 import dominio.prenda.Prenda;
 import dominio.prenda.TipoPrenda;
@@ -25,7 +26,7 @@ public class Borrador {
     public void establecerMaterial(Material material){
         this.validarTipoPrenda(tipoPrenda);
         this.validarMaterial(material);
-        this.validarConsistenciaConTipoPrenda(material);
+        tipoPrenda.validarSiAdmiteMaterial(material);
         this.material = material;
     }
 
@@ -43,13 +44,16 @@ public class Borrador {
     }
 
     public Prenda crearPrenda(){
+        validarAtributos(tipoPrenda, material, colorPrincipal);
+        tipoPrenda.validarSiAdmiteMaterial(material);
         return new Prenda(tipoPrenda,material,colorPrincipal,colorSecundario,trama);
     }
 
     //VALIDACIONES
 
-    public void validarConsistenciaConTipoPrenda(Material material){
-
+    private void validarAtributos(TipoPrenda tipo, Material materialPrenda, Color colorPrimario) {
+        if (tipo == null || materialPrenda == null || colorPrimario == null)
+            throw new PrendaIncompletaException();
     }
 
     public void validarTipoPrenda(TipoPrenda tipoPrenda){

@@ -1,3 +1,4 @@
+import dominio.Borrador;
 import dominio.excepciones.PrendaIncompletaException;
 import dominio.prenda.*;
 import org.junit.jupiter.api.Test;
@@ -25,18 +26,33 @@ public class PrendaTest {
 
     //MOCKITOS
     private Prenda anteojosDeSol(){
-        return new Prenda(ANTEOJOS,Material.PLASTICO, Color.YELLOW,null,null);
+        Borrador borrador = new Borrador();
+        borrador.establecerTipoPrenda(ANTEOJOS);
+        borrador.establecerMaterial(Material.PLASTICO);
+        borrador.establecerColorPrincipal(Color.YELLOW);
+        return borrador.crearPrenda();
     }
 
     private Prenda remeraMangasCortasAzul(){
-        return new Prenda(REMERA_MANGA_CORTA, Material.ALGODON, Color.BLUE,null,null);
+        Borrador borrador = new Borrador();
+        borrador.establecerTipoPrenda(REMERA_MANGA_CORTA);
+        borrador.establecerMaterial(Material.ALGODON);
+        borrador.establecerColorPrincipal(Color.BLUE);
+        return borrador.crearPrenda();
     }
 
     private Prenda zapatillasConverse(){
-        return new Prenda(ZAPATILLAS, null, Color.white,null,null);
+        Borrador borrador = new Borrador();
+        borrador.establecerTipoPrenda(ZAPATILLAS);
+        borrador.establecerColorPrincipal(Color.white);
+        return borrador.crearPrenda();
     }
 
     private Prenda polleraAmarilla(){
-        return new Prenda(POLLERA, Material.LYCRA, Color.YELLOW,null,null);
+        Borrador borrador = new Borrador();
+        borrador.establecerTipoPrenda(POLLERA);
+        borrador.establecerMaterial(Material.LYCRA);
+        borrador.establecerColorPrincipal(Color.YELLOW);
+        return borrador.crearPrenda();
     }
 }

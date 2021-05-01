@@ -5,14 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d30a341-e4e7-43dd-9c29-77db3ac9eb20" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dominio/uniforme/Diseñador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dominio/uniforme/Uniforme.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dominio/uniforme/diseñadores/DiseñadorJohnson.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dominio/uniforme/diseñadores/DiseñadorSanJuan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ejercicio.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/ejercicio.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ejercicio.iws" beforeDir="false" afterPath="$PROJECT_DIR$/ejercicio.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/Borrador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/Borrador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dominio/prenda/Material.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/prenda/Material.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/prenda/Prenda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/prenda/Prenda.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dominio/prenda/TipoPrenda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/prenda/TipoPrenda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BorradorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BorradorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PrendaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PrendaTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -275,7 +274,7 @@
       <recent name="dominio.prenda" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.Whole project">
     <configuration selected="false" default="true" type="Applet" factoryName="Applet">
       <module name="" />
       <option name="MAIN_CLASS_NAME" />
@@ -292,13 +291,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -308,6 +309,32 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BorradorTest" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrendaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ejercicio" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PrendaTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Whole project" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <option name="VM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
@@ -330,6 +357,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Whole project" />
+        <item itemvalue="JUnit.PrendaTest" />
         <item itemvalue="JUnit.BorradorTest" />
       </list>
     </recent_temporary>
@@ -371,7 +400,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1619797015269</updated>
-      <workItem from="1619797017781" duration="3770000" />
+      <workItem from="1619797017781" duration="8692000" />
+      <workItem from="1619837417974" duration="381000" />
     </task>
     <servers />
   </component>
