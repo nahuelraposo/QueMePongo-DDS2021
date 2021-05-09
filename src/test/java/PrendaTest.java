@@ -10,17 +10,17 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class PrendaTest {
     @Test
-    public void laCategoriaDeLosAnteojosDeSolEsAccesorio() {
+    public void laCategoriaDeLosAnteojosDeSolTieneQueSerACCESORIO() {
         assertEquals(anteojosDeSol().getTipoPrenda().getCategoria(), Categoria.ACCESORIO);
     }
 
     @Test
-    public void laCategoriaDeLaRemeraMangaCortaEsParteSuperior() {
+    public void laCategoriaDeLaRemeraMangaCortaTieneQueSerPARTESUPERIOR() {
         assertEquals(remeraMangasCortasAzul().getTipoPrenda().getCategoria(), Categoria.PARTE_SUPERIOR);
     }
 
     @Test
-    public void elMaterialDeLasZapatillasConverseEsNullYTiraException() {
+    public void zapatillasConverseTieneQueTirarNullPorMaterialNoSeteado() {
         assertThrows(PrendaIncompletaException.class,()->{zapatillasConverse();});
     }
 

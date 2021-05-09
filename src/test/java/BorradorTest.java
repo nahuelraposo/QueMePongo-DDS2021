@@ -10,22 +10,22 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class BorradorTest {
     @Test
-    public void laTramaDeLaRemeraEsLISA() {
+    public void laTramaDeLaRemeraTieneQueSerLISA() {
         assertEquals(prenda1().getTrama(), Trama.LISA);
     }
 
     @Test
-    public void elMaterialDelBorrador2esNuloYTiraExcepcion() {
+    public void borrador2TieneQueFallarPorTenerAlMaterialEnNull() {
         assertThrows(RuntimeException.class,()->{prenda2();});
     }
 
     @Test
-    public void tiraErrorPorqueElTipoPrendaAunNoSeAclaro() {
+    public void prenda3TiraErrorPorqueElTipoPrendaAunNoSeAclaro() {
         assertThrows(RuntimeException.class,()->{prenda3();});
     }
 
     @Test
-    public void tiraErrorPorqueUnaRemeraNoAdmiteMaterialCuero() {
+    public void prenda4TiraErrorPorqueUnaRemeraNoAdmiteDeMaterialAlCuero() {
         assertThrows(RuntimeException.class,()->{prenda4();});
     }
 
