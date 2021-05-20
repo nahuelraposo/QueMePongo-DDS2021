@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d30a341-e4e7-43dd-9c29-77db3ac9eb20" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/dominio/AccuWeatherAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dominio/sugerencia/GeneradorSugerencias.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dominio/sugerencia/Sugerencia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ejercicio.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/ejercicio.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ejercicio.iws" beforeDir="false" afterPath="$PROJECT_DIR$/ejercicio.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/Borrador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/Borrador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/prenda/Material.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/prenda/Material.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/prenda/Prenda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/prenda/Prenda.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/prenda/TipoPrenda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/prenda/TipoPrenda.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BorradorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BorradorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PrendaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PrendaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/Usuario.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,6 +180,7 @@
       <list>
         <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -268,9 +268,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../dds-monedero-java8" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="dominio" />
       <recent name="dominio.prenda" />
     </key>
   </component>
@@ -291,15 +293,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -401,7 +401,13 @@
       <option name="presentableId" value="Default" />
       <updated>1619797015269</updated>
       <workItem from="1619797017781" duration="8692000" />
-      <workItem from="1619837417974" duration="381000" />
+      <workItem from="1619837417974" duration="1014000" />
+      <workItem from="1619993733812" duration="37000" />
+      <workItem from="1619993797701" duration="28000" />
+      <workItem from="1619997637645" duration="20000" />
+      <workItem from="1620595617819" duration="912000" />
+      <workItem from="1621007257350" duration="54000" />
+      <workItem from="1621552741409" duration="1589000" />
     </task>
     <servers />
   </component>
