@@ -8,6 +8,7 @@ public class Prenda {
     Color colorPrincipal;
     Color colorSecundario;
     Trama trama;
+    Object temperaturaApta;
 
     public Prenda(TipoPrenda tipo, Material materialPrenda,
                   Color colorPrimario, Color colorSecundario, Trama trama) {
@@ -24,5 +25,11 @@ public class Prenda {
 
     public Trama getTrama(){
         return trama;
+    }
+
+    //esto hay que reveerlo, tengo que encontrar una forma mejor de
+    //implementar la temperatura de la prenda
+    public boolean aptaParaTemperatura(Object temperatura) {
+        return temperatura.equals(temperaturaApta);
     }
 }

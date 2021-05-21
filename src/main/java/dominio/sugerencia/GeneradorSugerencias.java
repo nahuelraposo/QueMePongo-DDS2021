@@ -1,10 +1,11 @@
 package dominio.sugerencia;
 
+import dominio.Atuendo;
 import dominio.prenda.Prenda;
 
 import java.util.List;
 
 public interface GeneradorSugerencias {
 
-    public List<Sugerencia> generarSugerenciasDesde(List<Prenda> prendasAptas);
+    public List<Atuendo> generarSugerenciasDesde(List<Prenda> prendasAptas);
 }
