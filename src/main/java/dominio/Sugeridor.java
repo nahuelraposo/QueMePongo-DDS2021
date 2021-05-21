@@ -1,6 +1,7 @@
 package dominio;
 
 import dominio.excepciones.SugerenciaIncompletaException;
+import dominio.serviciosMetereologicos.ServicioMetereologico;
 import dominio.sugerencia.GeneradorSugerencias;
 
 import java.util.List;

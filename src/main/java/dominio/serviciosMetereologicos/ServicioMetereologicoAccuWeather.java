@@ -1,18 +1,19 @@
-package dominio;
+package dominio.serviciosMetereologicos;
+
+import dominio.AccuWeatherAPI;
+import dominio.RespuestaAccuWeather;
 
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.Map;
 
-//por el momento para el req 5 uso la solución que dieron, falta implementar una propia
-
-public class ServicioMetereologico {
+public class ServicioMetereologicoAccuWeather implements  ServicioMetereologico{
     private AccuWeatherAPI api;
     private Duration periodoDeValidez;
     private Map<String, RespuestaAccuWeather> ultimasRespuestas;
 
-    public ServicioMetereologico(AccuWeatherAPI api, Duration periodoDeValidez) {
+    public ServicioMetereologicoAccuWeather(AccuWeatherAPI api, Duration periodoDeValidez) {
         this.api = api;
         this.periodoDeValidez = periodoDeValidez;
         this.ultimasRespuestas = new HashMap<>();
@@ -25,13 +26,11 @@ public class ServicioMetereologico {
         return this.ultimasRespuestas.get(direccion).getEstadoDelTiempo();
     }
 
-    private LocalDateTime proximaExpiracion() {
+    public LocalDateTime proximaExpiracion() {
         return LocalDateTime.now().plus(this.periodoDeValidez);
     }
 
-    private Map<String, Object> consultarApi(String direccion) {
+    public Map<String, Object> consultarApi(String direccion) {
         return this.api.getWeather(direccion).get(LocalDateTime.now().getHour());
     }
-
-
 }
