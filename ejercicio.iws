@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d30a341-e4e7-43dd-9c29-77db3ac9eb20" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dominio/serviciosMetereologicos/ServicioMetereologicoAccuWeather.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/ServicioMetereologico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/serviciosMetereologicos/ServicioMetereologico.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/Sugeridor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/Sugeridor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dominio/excepciones/AtuendoNoAptoParaTemperaturaException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ejercicio.iws" beforeDir="false" afterPath="$PROJECT_DIR$/ejercicio.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/Sugeridor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/Usuario.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -404,7 +405,9 @@
       <workItem from="1619997637645" duration="20000" />
       <workItem from="1620595617819" duration="912000" />
       <workItem from="1621007257350" duration="54000" />
-      <workItem from="1621552741409" duration="10503000" />
+      <workItem from="1621552741409" duration="11098000" />
+      <workItem from="1621608604608" duration="1108000" />
+      <workItem from="1621646681300" duration="1896000" />
     </task>
     <servers />
   </component>
