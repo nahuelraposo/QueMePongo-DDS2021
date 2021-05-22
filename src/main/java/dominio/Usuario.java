@@ -9,7 +9,6 @@ import dominio.sugerencia.GeneradorSugerencias;
 import java.math.BigDecimal;
 import java.util.List;
 import java.util.Map;
-import java.util.stream.Collectors;
 
 public class Usuario {
     private List<Prenda> guardarropas;
