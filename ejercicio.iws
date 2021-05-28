@@ -5,19 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d30a341-e4e7-43dd-9c29-77db3ac9eb20" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dominio/guardarropa/Guardarropa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dominio/guardarropa/GuardarropaCompartido.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dominio/excepciones/GuardarropaIncorrectoException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dominio/guardarropa/Recomendacion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dominio/guardarropa/RecomendarAgregar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dominio/guardarropa/RecomendarQuitar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ejercicio.iws" beforeDir="false" afterPath="$PROJECT_DIR$/ejercicio.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/Borrador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/prenda/Borrador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/RespuestaAccuWeather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/serviciosMetereologicos/RespuestaAccuWeather.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dominio/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/Usuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/serviciosMetereologicos/ServicioMetereologico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/serviciosMetereologicos/ServicioMetereologico.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/serviciosMetereologicos/ServicioMetereologicoAccuWeather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/serviciosMetereologicos/ServicioMetereologicoAccuWeather.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/sugerencia/GeneradorSugerencias.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/generadorSugerencia/GeneradorSugerencias.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/uniforme/diseñadores/DiseñadorJohnson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/uniforme/diseñadores/DiseñadorJohnson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/uniforme/diseñadores/DiseñadorSanJuan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/uniforme/diseñadores/DiseñadorSanJuan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BorradorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BorradorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PrendaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PrendaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/guardarropa/Guardarropa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/guardarropa/Guardarropa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/guardarropa/GuardarropaCompartido.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -275,10 +270,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../2021-vi-no-grupo-8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="dominio.excepciones" />
+      <recent name="dominio.guardarropa" />
       <recent name="dominio" />
       <recent name="dominio.prenda" />
     </key>
@@ -296,6 +293,19 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -435,6 +445,7 @@
       <workItem from="1621913728353" duration="38000" />
       <workItem from="1621915851243" duration="46000" />
       <workItem from="1622164349422" duration="1388000" />
+      <workItem from="1622165780292" duration="3424000" />
     </task>
     <servers />
   </component>

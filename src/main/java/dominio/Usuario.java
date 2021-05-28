@@ -3,6 +3,7 @@ package dominio;
 import dominio.excepciones.AtuendoNoAptoParaTemperaturaException;
 import dominio.excepciones.SugerenciaIncompletaException;
 import dominio.guardarropa.Guardarropa;
+import dominio.guardarropa.Recomendacion;
 import dominio.prenda.Prenda;
 import dominio.serviciosMetereologicos.ServicioMetereologico;
 import dominio.generadorSugerencia.GeneradorSugerencias;
@@ -16,6 +17,7 @@ public class Usuario {
     private List<Guardarropa> guardarropas;
     private ServicioMetereologico servicioMetereologico;
     private GeneradorSugerencias generadorSugerencias;
+    private List<Recomendacion> recomendaciones = new ArrayList<>();
 
     public Usuario(List<Guardarropa> guardarropas, ServicioMetereologico servicioMetereologico, GeneradorSugerencias generadorSugerencias){
         this.guardarropas = guardarropas;
@@ -37,6 +39,23 @@ public class Usuario {
         validarAtuendosAptosParaTemperatura(atuendosSugeridos,estadoDelTiempo);
 
         return atuendosSugeridos;
+    }
+
+    public void agregarRecomendacion(Recomendacion recomendacion) {
+        this.getRecomendaciones().add(recomendacion);
+    }
+
+    public void aceptarRecomendacion(Recomendacion recomendacion,Guardarropa guardarropa){
+        recomendacion.ejecutar(this,guardarropa);
+    }
+
+    public void rechazarRecomendacion(Recomendacion recomendacion){
+        recomendaciones.remove(recomendacion);
+    }
+
+    public void deshacerRecomendacion(Recomendacion recomendacion,Guardarropa guardarropa){
+        recomendacion.deshacer(this,guardarropa);
+        recomendaciones.remove(recomendacion);
     }
 
     public List<Prenda> prendasEnTotal(){
@@ -66,5 +85,9 @@ public class Usuario {
 
     public List<Guardarropa> getGuardarropas(){
         return guardarropas;
+    }
+
+    public List<Recomendacion> getRecomendaciones() {
+        return recomendaciones;
     }
 }
