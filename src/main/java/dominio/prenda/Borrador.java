@@ -1,4 +1,4 @@
-package dominio;
+package dominio.prenda;
 
 import dominio.excepciones.PrendaIncompletaException;
 import dominio.prenda.Material;

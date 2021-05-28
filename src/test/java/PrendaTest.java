@@ -1,4 +1,4 @@
-import dominio.Borrador;
+import dominio.prenda.Borrador;
 import dominio.excepciones.PrendaIncompletaException;
 import dominio.prenda.*;
 import org.junit.jupiter.api.Test;

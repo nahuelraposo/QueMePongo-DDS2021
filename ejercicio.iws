@@ -5,8 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d30a341-e4e7-43dd-9c29-77db3ac9eb20" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/Atuendo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/Atuendo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dominio/guardarropa/Guardarropa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dominio/guardarropa/GuardarropaCompartido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ejercicio.iws" beforeDir="false" afterPath="$PROJECT_DIR$/ejercicio.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/Borrador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/prenda/Borrador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/RespuestaAccuWeather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/serviciosMetereologicos/RespuestaAccuWeather.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dominio/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/serviciosMetereologicos/ServicioMetereologico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/serviciosMetereologicos/ServicioMetereologico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/serviciosMetereologicos/ServicioMetereologicoAccuWeather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/serviciosMetereologicos/ServicioMetereologicoAccuWeather.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/sugerencia/GeneradorSugerencias.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/generadorSugerencia/GeneradorSugerencias.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/uniforme/diseñadores/DiseñadorJohnson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/uniforme/diseñadores/DiseñadorJohnson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/uniforme/diseñadores/DiseñadorSanJuan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/uniforme/diseñadores/DiseñadorSanJuan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BorradorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BorradorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PrendaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PrendaTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -264,7 +275,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../dds-monedero-java8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../2021-vi-no-grupo-8" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -272,7 +283,7 @@
       <recent name="dominio.prenda" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Whole project">
+  <component name="RunManager" selected="JUnit.Whole project (2)">
     <configuration selected="false" default="true" type="Applet" factoryName="Applet">
       <module name="" />
       <option name="MAIN_CLASS_NAME" />
@@ -285,17 +296,6 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -319,6 +319,30 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="PrendaTest" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Whole project (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Whole project (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <option name="VM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
@@ -353,6 +377,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Whole project (2)" />
+        <item itemvalue="JUnit.Whole project (1)" />
         <item itemvalue="JUnit.Whole project" />
         <item itemvalue="JUnit.PrendaTest" />
         <item itemvalue="JUnit.BorradorTest" />
@@ -405,7 +431,10 @@
       <workItem from="1621007257350" duration="54000" />
       <workItem from="1621552741409" duration="11098000" />
       <workItem from="1621608604608" duration="1108000" />
-      <workItem from="1621646681300" duration="2403000" />
+      <workItem from="1621646681300" duration="3808000" />
+      <workItem from="1621913728353" duration="38000" />
+      <workItem from="1621915851243" duration="46000" />
+      <workItem from="1622164349422" duration="1388000" />
     </task>
     <servers />
   </component>

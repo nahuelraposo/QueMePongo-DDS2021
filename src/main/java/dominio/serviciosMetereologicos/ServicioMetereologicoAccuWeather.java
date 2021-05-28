@@ -1,7 +1,6 @@
 package dominio.serviciosMetereologicos;
 
 import dominio.AccuWeatherAPI;
-import dominio.RespuestaAccuWeather;
 
 import java.time.Duration;
 import java.time.LocalDateTime;

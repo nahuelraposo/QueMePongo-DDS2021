@@ -1,4 +1,4 @@
-import dominio.Borrador;
+import dominio.prenda.Borrador;
 import dominio.prenda.*;
 import org.junit.jupiter.api.Test;
 

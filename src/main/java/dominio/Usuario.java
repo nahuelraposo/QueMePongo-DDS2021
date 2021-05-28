@@ -2,20 +2,22 @@ package dominio;
 
 import dominio.excepciones.AtuendoNoAptoParaTemperaturaException;
 import dominio.excepciones.SugerenciaIncompletaException;
+import dominio.guardarropa.Guardarropa;
 import dominio.prenda.Prenda;
 import dominio.serviciosMetereologicos.ServicioMetereologico;
-import dominio.sugerencia.GeneradorSugerencias;
+import dominio.generadorSugerencia.GeneradorSugerencias;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
 public class Usuario {
-    private List<Prenda> guardarropas;
+    private List<Guardarropa> guardarropas;
     private ServicioMetereologico servicioMetereologico;
     private GeneradorSugerencias generadorSugerencias;
 
-    public Usuario(List<Prenda> guardarropas, ServicioMetereologico servicioMetereologico, GeneradorSugerencias generadorSugerencias){
+    public Usuario(List<Guardarropa> guardarropas, ServicioMetereologico servicioMetereologico, GeneradorSugerencias generadorSugerencias){
         this.guardarropas = guardarropas;
         this.servicioMetereologico = servicioMetereologico;
         this.generadorSugerencias = generadorSugerencias;
@@ -30,11 +32,17 @@ public class Usuario {
 
     public List<Atuendo> atuendosSugeridos(String direccion){
         Map<String, Object> estadoDelTiempo = servicioMetereologico.obtenerCondicionesClimaticas(direccion);
-        List<Atuendo> atuendosSugeridos = generadorSugerencias.generarSugerenciasDesde(this.getGuardarropas());
+        List<Atuendo> atuendosSugeridos = generadorSugerencias.generarSugerenciasDesde(this.prendasEnTotal());
         validarAtuendos(atuendosSugeridos);
         validarAtuendosAptosParaTemperatura(atuendosSugeridos,estadoDelTiempo);
 
         return atuendosSugeridos;
+    }
+
+    public List<Prenda> prendasEnTotal(){
+        List<Prenda> prendasTotales = new ArrayList<>();
+        this.getGuardarropas().stream().map(guardarropa -> guardarropa.getPrendas()).forEach(guardarropa -> guardarropa.addAll(prendasTotales));
+        return  prendasTotales;
     }
 
     private void validarAtuendosAptosParaTemperatura(List<Atuendo> atuendosSugeridos, Map<String, Object> estadoDelTiempo) {
@@ -56,7 +64,7 @@ public class Usuario {
                 .allMatch(atuendo -> atuendo.aptoParaTemperatura(estadoDelTiempo));
     }
 
-    public List<Prenda> getGuardarropas(){
+    public List<Guardarropa> getGuardarropas(){
         return guardarropas;
     }
 }

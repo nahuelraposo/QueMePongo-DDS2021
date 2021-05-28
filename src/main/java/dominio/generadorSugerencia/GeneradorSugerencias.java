@@ -1,4 +1,4 @@
-package dominio.sugerencia;
+package dominio.generadorSugerencia;
 
 import dominio.Atuendo;
 import dominio.prenda.Prenda;

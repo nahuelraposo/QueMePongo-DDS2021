@@ -1,6 +1,6 @@
 package dominio.uniforme.diseñadores;
 
-import dominio.Borrador;
+import dominio.prenda.Borrador;
 import dominio.prenda.Material;
 import dominio.prenda.Prenda;
 import dominio.prenda.TipoPrenda;
