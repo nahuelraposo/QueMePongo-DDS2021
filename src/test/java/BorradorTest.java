@@ -30,7 +30,7 @@ public class BorradorTest {
     }
 
 
-    //MOCKITOS
+    //FIXTURE
     private Prenda prenda1(){
         Borrador borrador = new Borrador();
         borrador.establecerTipoPrenda(REMERA_MANGA_CORTA);

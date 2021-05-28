@@ -24,7 +24,7 @@ public class PrendaTest {
         assertThrows(PrendaIncompletaException.class,()->{zapatillasConverse();});
     }
 
-    //MOCKITOS
+    //FIXTURE
     private Prenda anteojosDeSol(){
         Borrador borrador = new Borrador();
         borrador.establecerTipoPrenda(ANTEOJOS);

@@ -5,14 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d30a341-e4e7-43dd-9c29-77db3ac9eb20" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dominio/excepciones/GuardarropaIncorrectoException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dominio/guardarropa/Recomendacion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dominio/guardarropa/RecomendarAgregar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dominio/guardarropa/RecomendarQuitar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/RecomendacionTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ejercicio.iws" beforeDir="false" afterPath="$PROJECT_DIR$/ejercicio.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/Usuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/guardarropa/Guardarropa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/guardarropa/Guardarropa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/guardarropa/GuardarropaCompartido.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/guardarropa/RecomendarAgregar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/guardarropa/RecomendarAgregar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/guardarropa/RecomendarQuitar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/guardarropa/RecomendarQuitar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BorradorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BorradorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PrendaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PrendaTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -280,7 +278,7 @@
       <recent name="dominio.prenda" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Whole project (2)">
+  <component name="RunManager" selected="JUnit.RecomendacionTest">
     <configuration selected="false" default="true" type="Applet" factoryName="Applet">
       <module name="" />
       <option name="MAIN_CLASS_NAME" />
@@ -297,23 +295,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BorradorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RecomendacionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ejercicio" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BorradorTest" />
+      <option name="MAIN_CLASS_NAME" value="RecomendacionTest" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -324,11 +320,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrendaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RecomendacionTest.unaRecomendacionSeAceptayLaPrendaIngresaAlGuardarropa" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ejercicio" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PrendaTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="RecomendacionTest" />
+      <option name="METHOD_NAME" value="unaRecomendacionSeAceptayLaPrendaIngresaAlGuardarropa" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RecomendacionTest.unaRecomendacionSeRechazayLaPrendaIngresaAlGuardarropa" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ejercicio" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RecomendacionTest" />
+      <option name="METHOD_NAME" value="unaRecomendacionSeRechazayLaPrendaIngresaAlGuardarropa" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
@@ -362,18 +374,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Whole project" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <option name="VM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="wholeProject" />
-      </option>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
@@ -387,11 +387,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RecomendacionTest" />
+        <item itemvalue="JUnit.RecomendacionTest.unaRecomendacionSeAceptayLaPrendaIngresaAlGuardarropa" />
+        <item itemvalue="JUnit.RecomendacionTest.unaRecomendacionSeRechazayLaPrendaIngresaAlGuardarropa" />
         <item itemvalue="JUnit.Whole project (2)" />
         <item itemvalue="JUnit.Whole project (1)" />
-        <item itemvalue="JUnit.Whole project" />
-        <item itemvalue="JUnit.PrendaTest" />
-        <item itemvalue="JUnit.BorradorTest" />
       </list>
     </recent_temporary>
   </component>
@@ -445,7 +445,10 @@
       <workItem from="1621913728353" duration="38000" />
       <workItem from="1621915851243" duration="46000" />
       <workItem from="1622164349422" duration="1388000" />
-      <workItem from="1622165780292" duration="3424000" />
+      <workItem from="1622165780292" duration="4147000" />
+      <workItem from="1622241114996" duration="569000" />
+      <workItem from="1622241728595" duration="89000" />
+      <workItem from="1622241836511" duration="676000" />
     </task>
     <servers />
   </component>

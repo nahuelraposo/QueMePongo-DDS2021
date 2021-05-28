@@ -8,6 +8,10 @@ public class RecomendarAgregar implements Recomendacion{
     Prenda prendaARecomendar;
     Boolean aceptada = false;
 
+    public RecomendarAgregar(Prenda prenda){
+        this.prendaARecomendar = prenda;
+    }
+
     public void ejecutar(Usuario usuario,Guardarropa guardarropa){
         if(usuario.getGuardarropas().contains(guardarropa)){
             guardarropa.agregarPrenda(prendaARecomendar);
