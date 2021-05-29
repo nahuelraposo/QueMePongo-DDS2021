@@ -45,16 +45,16 @@ public class Usuario {
         this.getRecomendaciones().add(recomendacion);
     }
 
-    public void aceptarRecomendacion(Recomendacion recomendacion,Guardarropa guardarropa){
-        recomendacion.ejecutar(this,guardarropa);
+    public void aceptarRecomendacion(Recomendacion recomendacion){
+        recomendacion.ejecutar(this);
     }
 
     public void rechazarRecomendacion(Recomendacion recomendacion){
         recomendaciones.remove(recomendacion);
     }
 
-    public void deshacerRecomendacion(Recomendacion recomendacion,Guardarropa guardarropa){
-        recomendacion.deshacer(this,guardarropa);
+    public void deshacerRecomendacion(Recomendacion recomendacion){
+        recomendacion.deshacer(this);
         recomendaciones.remove(recomendacion);
     }
 
@@ -81,6 +81,10 @@ public class Usuario {
     private boolean losAtuendosSonAptosParaLaTemperatura(List<Atuendo> atuendosSugeridos, Map<String, Object> estadoDelTiempo) {
         return atuendosSugeridos.stream()
                 .allMatch(atuendo -> atuendo.aptoParaTemperatura(estadoDelTiempo));
+    }
+
+    public void agregarGuardarropa(Guardarropa guardarropa){
+        guardarropas.add(guardarropa);
     }
 
     public List<Guardarropa> getGuardarropas(){

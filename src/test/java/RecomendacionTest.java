@@ -24,18 +24,18 @@ public class RecomendacionTest {
   Prenda anteojosDeSol = anteojosDeSol();
   Prenda remeraMangasCortasAzul = remeraMangasCortasAzul();
 
-  Recomendacion recomendarAgregar = new RecomendarAgregar(anteojosDeSol);
-  Recomendacion recomendarQuitar = new RecomendarQuitar(remeraMangasCortasAzul);
+  Recomendacion recomendarAgregar = new RecomendarAgregar(anteojosDeSol,guardarropa);
+  Recomendacion recomendarQuitar = new RecomendarQuitar(remeraMangasCortasAzul,guardarropa);
 
   @BeforeEach
   void setup() {
-    guardarropas.add(guardarropa);
+    usuario.agregarGuardarropa(guardarropa);
   }
 
   @Test
   public void unaRecomendacionAgregarSeAceptayLaPrendaIngresaAlGuardarropa() {
       usuario.agregarRecomendacion(recomendarAgregar);
-      usuario.aceptarRecomendacion(recomendarAgregar,guardarropa);
+      usuario.aceptarRecomendacion(recomendarAgregar);
 
     Assertions.assertTrue(guardarropa.getPrendas().contains(anteojosDeSol));
   }
@@ -51,17 +51,17 @@ public class RecomendacionTest {
   @Test
   public void unaRecomendacionAgregarSeDeshaceyLaPrendaQueIngresoSeQuita() {
     usuario.agregarRecomendacion(recomendarAgregar);
-    usuario.aceptarRecomendacion(recomendarAgregar,guardarropa);
-    usuario.deshacerRecomendacion(recomendarAgregar,guardarropa);
+    usuario.aceptarRecomendacion(recomendarAgregar);
+    usuario.deshacerRecomendacion(recomendarAgregar);
 
     Assertions.assertFalse(guardarropa.getPrendas().contains(anteojosDeSol));
   }
 
   @Test
   public void unaRecomendacionQuitarSeAceptayLaPrendaSaleDelGuardarropa() {
-    guardarropa.agregarPrenda(remeraMangasCortasAzul);
+    guardarropa.agregarPrendaRecomendada(usuario,remeraMangasCortasAzul);
     usuario.agregarRecomendacion(recomendarQuitar);
-    usuario.aceptarRecomendacion(recomendarQuitar,guardarropa);
+    usuario.aceptarRecomendacion(recomendarQuitar);
 
     Assertions.assertFalse(guardarropa.getPrendas().contains(remeraMangasCortasAzul));
   }

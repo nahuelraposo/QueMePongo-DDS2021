@@ -5,7 +5,7 @@ import dominio.prenda.Prenda;
 
 public interface Recomendacion {
 
-    public void ejecutar(Usuario usuario,Guardarropa guardarropa);
+    public void ejecutar(Usuario usuario);
 
-    public void deshacer(Usuario usuario, Guardarropa guardarropa);
+    public void deshacer(Usuario usuario);
 }

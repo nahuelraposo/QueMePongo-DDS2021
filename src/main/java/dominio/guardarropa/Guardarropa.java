@@ -1,5 +1,7 @@
 package dominio.guardarropa;
 
+import dominio.Usuario;
+import dominio.excepciones.GuardarropaIncorrectoException;
 import dominio.prenda.Prenda;
 
 import java.util.List;
@@ -11,12 +13,20 @@ public class Guardarropa {
         this.prendas = prendas;
     }
 
-    public void agregarPrenda(Prenda prenda){
-        prendas.add(prenda);
+    public void agregarPrendaRecomendada(Usuario usuario,Prenda prenda){
+        if(usuario.getGuardarropas().contains(this)){
+            prendas.add(prenda);
+        }
+        else
+            throw new GuardarropaIncorrectoException();
     }
 
-    public void quitarPrenda(Prenda prenda) {
-        prendas.remove(prenda);
+    public void quitarPrendaRecomendada(Usuario usuario,Prenda prenda) {
+        if(usuario.getGuardarropas().contains(this)){
+            prendas.remove(prenda);
+        }
+        else
+            throw new GuardarropaIncorrectoException();
     }
 
     public List<Prenda> getPrendas() {

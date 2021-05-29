@@ -7,26 +7,23 @@ import dominio.prenda.Prenda;
 public class RecomendarAgregar implements Recomendacion{
     Prenda prendaARecomendar;
     Boolean aceptada = false;
+    Guardarropa guardarropa;
 
-    public RecomendarAgregar(Prenda prenda){
+    public RecomendarAgregar(Prenda prenda,Guardarropa guardarropa){
         this.prendaARecomendar = prenda;
+        this.guardarropa = guardarropa;
     }
 
-    public void ejecutar(Usuario usuario,Guardarropa guardarropa){
-        if(usuario.getGuardarropas().contains(guardarropa)){
-            guardarropa.agregarPrenda(prendaARecomendar);
+    public void ejecutar(Usuario usuario){
+            getGuardarropa().agregarPrendaRecomendada(usuario,prendaARecomendar);
             this.aceptada = true;
-        }
-        else
-            throw new GuardarropaIncorrectoException();
     }
 
-    public void deshacer(Usuario usuario, Guardarropa guardarropa){
-        if(usuario.getGuardarropas().contains(guardarropa)){
-            guardarropa.quitarPrenda(prendaARecomendar);
-        }
-        else
-            throw new GuardarropaIncorrectoException();
+    public void deshacer(Usuario usuario){
+            getGuardarropa().quitarPrendaRecomendada(usuario,prendaARecomendar);
     }
 
+  public Guardarropa getGuardarropa() {
+    return guardarropa;
+  }
 }
