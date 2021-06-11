@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d30a341-e4e7-43dd-9c29-77db3ac9eb20" name="Default Changelist" comment="">
+    <list default="true" id="40e97cc3-2206-46a1-a49d-d58009817e5e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/dominio/notificador/MailSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dominio/notificador/Notificador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dominio/notificador/services/JavaMailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ejercicio.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/ejercicio.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ejercicio.iws" beforeDir="false" afterPath="$PROJECT_DIR$/ejercicio.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/AccuWeatherAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/AccuWeatherAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/Atuendo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/Atuendo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dominio/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/Usuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/guardarropa/Guardarropa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/guardarropa/Guardarropa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/guardarropa/Recomendacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/guardarropa/Recomendacion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/guardarropa/RecomendarAgregar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/guardarropa/RecomendarAgregar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/guardarropa/RecomendarQuitar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/guardarropa/RecomendarQuitar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RecomendacionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RecomendacionTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,22 +178,12 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GitSEFilterConfiguration">
-    <file-type-list>
-      <filtered-out-file-type name="LOCAL_BRANCH" />
-      <filtered-out-file-type name="REMOTE_BRANCH" />
-      <filtered-out-file-type name="TAG" />
-      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
-    </file-type-list>
   </component>
   <component name="HierarchyBrowserManager">
     <option name="SHOW_PACKAGES" value="false" />
@@ -242,7 +231,7 @@
     <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
     <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
   </component>
-  <component name="ProjectId" id="1rtYgtNaKqMXLlFJGkdbQRMLXy9" />
+  <component name="ProjectId" id="1tmg8I9j8KqkCYQ5wNY5AuT1rzI" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -269,17 +258,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="dominio.excepciones" />
-      <recent name="dominio.guardarropa" />
-      <recent name="dominio" />
-      <recent name="dominio.prenda" />
-    </key>
-  </component>
-  <component name="RunManager" selected="JUnit.Whole project (4)">
+  <component name="RunManager">
     <configuration selected="false" default="true" type="Applet" factoryName="Applet">
       <module name="" />
       <option name="MAIN_CLASS_NAME" />
@@ -296,77 +276,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RecomendacionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ejercicio" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RecomendacionTest" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="wholeProject" />
-      </option>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Whole project (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <option name="VM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="wholeProject" />
-      </option>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Whole project (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <option name="VM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="wholeProject" />
-      </option>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Whole project (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <option name="VM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="wholeProject" />
-      </option>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Whole project (4)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <option name="VM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="wholeProject" />
-      </option>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -382,15 +298,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.Whole project (4)" />
-        <item itemvalue="JUnit.RecomendacionTest" />
-        <item itemvalue="JUnit.Whole project (3)" />
-        <item itemvalue="JUnit.Whole project (2)" />
-        <item itemvalue="JUnit.Whole project (1)" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="StarteamConfiguration">
@@ -424,29 +331,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1d30a341-e4e7-43dd-9c29-77db3ac9eb20" name="Default Changelist" comment="" />
-      <created>1619797015269</created>
+      <changelist id="40e97cc3-2206-46a1-a49d-d58009817e5e" name="Default Changelist" comment="" />
+      <created>1623379521120</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1619797015269</updated>
-      <workItem from="1619797017781" duration="8692000" />
-      <workItem from="1619837417974" duration="1014000" />
-      <workItem from="1619993733812" duration="37000" />
-      <workItem from="1619993797701" duration="28000" />
-      <workItem from="1619997637645" duration="20000" />
-      <workItem from="1620595617819" duration="912000" />
-      <workItem from="1621007257350" duration="54000" />
-      <workItem from="1621552741409" duration="11098000" />
-      <workItem from="1621608604608" duration="1108000" />
-      <workItem from="1621646681300" duration="3808000" />
-      <workItem from="1621913728353" duration="38000" />
-      <workItem from="1621915851243" duration="46000" />
-      <workItem from="1622164349422" duration="1388000" />
-      <workItem from="1622165780292" duration="4147000" />
-      <workItem from="1622241114996" duration="569000" />
-      <workItem from="1622241728595" duration="89000" />
-      <workItem from="1622241836511" duration="676000" />
-      <workItem from="1622252345255" duration="861000" />
+      <updated>1623379521120</updated>
+      <workItem from="1623379523475" duration="770000" />
     </task>
     <servers />
   </component>
@@ -489,15 +379,6 @@
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VssConfiguration">

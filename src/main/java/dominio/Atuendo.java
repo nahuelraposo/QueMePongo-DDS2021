@@ -9,6 +9,10 @@ import java.util.Map;
 public class Atuendo {
     List<Prenda> atuendo;
 
+    public Atuendo(List<Prenda> atuendo){
+        this.atuendo = atuendo;
+    }
+
     public List<Prenda> getAtuendo() {
         return atuendo;
     }

@@ -1,9 +1,6 @@
 package dominio;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public final class AccuWeatherAPI {
 
@@ -23,5 +20,11 @@ public final class AccuWeatherAPI {
                 put("UnitType", 18);
             }});
         }});
+    }
+
+    public final Map<String, List<String>> getAlerts(String ciudad){
+        return new HashMap<String, List<String>>(){{
+            put("CurrentAlerts", Arrays.asList("Granizo","Tormenta"));
+        }};
     }
 }

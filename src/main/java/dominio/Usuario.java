@@ -18,6 +18,8 @@ public class Usuario {
     private ServicioMetereologico servicioMetereologico;
     private GeneradorSugerencias generadorSugerencias;
     private List<Recomendacion> recomendaciones = new ArrayList<>();
+    private String ciudad;
+    private List<Atuendo> atuendosDiariosSugeridos;
 
     public Usuario(List<Guardarropa> guardarropas, ServicioMetereologico servicioMetereologico, GeneradorSugerencias generadorSugerencias){
         this.guardarropas = guardarropas;
@@ -32,13 +34,24 @@ public class Usuario {
                 .get("Temperature");
     }
 
-    public List<Atuendo> atuendosSugeridos(String direccion){
-        Map<String, Object> estadoDelTiempo = servicioMetereologico.obtenerCondicionesClimaticas(direccion);
+    public List<String> obtenerUltimasAlertasMetereologicas(AccuWeatherAPI apiClima){
+        return apiClima
+                .getAlerts(ciudad)
+                .get("CurrentAlerts");
+    }
+
+    public List<Atuendo> atuendosSugeridos(){
+        Map<String, Object> estadoDelTiempo = servicioMetereologico.obtenerCondicionesClimaticas(ciudad);
         List<Atuendo> atuendosSugeridos = generadorSugerencias.generarSugerenciasDesde(this.prendasEnTotal());
         validarAtuendos(atuendosSugeridos);
         validarAtuendosAptosParaTemperatura(atuendosSugeridos,estadoDelTiempo);
 
         return atuendosSugeridos;
+    }
+
+    public void actualizarAtuendosDiariosSugeridos(){
+        List<Atuendo> sugerencias = this.atuendosSugeridos();
+        this.atuendosDiariosSugeridos = sugerencias;
     }
 
     public void agregarRecomendacion(Recomendacion recomendacion) {
@@ -94,4 +107,5 @@ public class Usuario {
     public List<Recomendacion> getRecomendaciones() {
         return recomendaciones;
     }
+
 }
