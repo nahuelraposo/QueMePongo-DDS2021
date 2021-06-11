@@ -20,7 +20,7 @@ public class RecomendacionTest {
   List<Prenda> prendas = new ArrayList<>();
   Guardarropa guardarropa = new Guardarropa(prendas);
   List<Guardarropa> guardarropas = new ArrayList<>();
-  Usuario usuario = new Usuario(guardarropas, null, null);
+  Usuario usuario = new Usuario(guardarropas, null, null,null,null,null,null,null);
   Prenda anteojosDeSol = anteojosDeSol();
   Prenda remeraMangasCortasAzul = remeraMangasCortasAzul();
 

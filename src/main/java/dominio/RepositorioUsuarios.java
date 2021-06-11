@@ -1,11 +1,14 @@
 package dominio;
 
+import dominio.proveedorDeClima.ProveedorDeClima;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class RepositorioUsuarios {
   private final static RepositorioUsuarios INSTANCE = new RepositorioUsuarios();
-  private static final List<Usuario> usuarios = new ArrayList<>();
+  private List<Usuario> usuarios = new ArrayList<>();
+  private ProveedorDeClima proveedorDeClima;
 
   public static RepositorioUsuarios getInstance() {
     return INSTANCE;
@@ -17,5 +20,9 @@ public class RepositorioUsuarios {
 
   public void actualizarSugerenciasDiariasDeUsuarios(){
     usuarios.forEach(usuario -> usuario.actualizarAtuendosDiariosSugeridos());
+  }
+
+  public List<Usuario> getUsuarios() {
+    return usuarios;
   }
 }

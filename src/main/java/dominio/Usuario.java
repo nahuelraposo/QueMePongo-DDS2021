@@ -4,9 +4,12 @@ import dominio.excepciones.AtuendoNoAptoParaTemperaturaException;
 import dominio.excepciones.SugerenciaIncompletaException;
 import dominio.guardarropa.Guardarropa;
 import dominio.guardarropa.Recomendacion;
+import dominio.notificador.Notificador;
 import dominio.prenda.Prenda;
+import dominio.proveedorDeClima.ProveedorDeClima;
 import dominio.serviciosMetereologicos.ServicioMetereologico;
 import dominio.generadorSugerencia.GeneradorSugerencias;
+import org.mockito.internal.matchers.Not;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -18,27 +21,34 @@ public class Usuario {
     private ServicioMetereologico servicioMetereologico;
     private GeneradorSugerencias generadorSugerencias;
     private List<Recomendacion> recomendaciones = new ArrayList<>();
-    private String ciudad;
     private List<Atuendo> atuendosDiariosSugeridos;
+    private String ciudad;
+    private String email;
+    private Notificador notificador;
 
-    public Usuario(List<Guardarropa> guardarropas, ServicioMetereologico servicioMetereologico, GeneradorSugerencias generadorSugerencias){
+    public Usuario(List<Guardarropa> guardarropas, ServicioMetereologico servicioMetereologico, GeneradorSugerencias generadorSugerencias,
+                   List<Recomendacion> recomendaciones, List<Atuendo> atuendosDiariosSugeridos,
+                   String ciudad, String email, Notificador notificador){
         this.guardarropas = guardarropas;
         this.servicioMetereologico = servicioMetereologico;
         this.generadorSugerencias = generadorSugerencias;
+        this.recomendaciones = recomendaciones;
+        this. atuendosDiariosSugeridos = atuendosDiariosSugeridos;
+        this.ciudad = ciudad;
+        this.email = email;
+        this.notificador = notificador;
     }
 
-    public Object condicionClimatica(String ciudad, BigDecimal hora, AccuWeatherAPI apiClima){
-        return apiClima
-                .getWeather(ciudad)
-                .get(hora.intValue())
-                .get("Temperature");
+    public void notificarAlertaMetereologica(String mensaje){
+        notificador.notificar(email,mensaje);
+        this.actualizarAtuendosDiariosSugeridos();
     }
 
-    public List<String> obtenerUltimasAlertasMetereologicas(AccuWeatherAPI apiClima){
-        return apiClima
-                .getAlerts(ciudad)
-                .get("CurrentAlerts");
+    public Object condicionClimatica(String ciudad, BigDecimal hora, ProveedorDeClima proveedorDeClima){
+        return proveedorDeClima.obtenerCondicionClimatica(ciudad,hora);
     }
+
+    // acá no se si estaria bien meter un metodo "obtenerUltimasAlertas"
 
     public List<Atuendo> atuendosSugeridos(){
         Map<String, Object> estadoDelTiempo = servicioMetereologico.obtenerCondicionesClimaticas(ciudad);

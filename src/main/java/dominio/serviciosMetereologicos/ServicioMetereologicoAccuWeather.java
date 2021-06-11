@@ -1,6 +1,6 @@
 package dominio.serviciosMetereologicos;
 
-import dominio.AccuWeatherAPI;
+import dominio.proveedorDeClima.AccuWeatherAPI;
 
 import java.time.Duration;
 import java.time.LocalDateTime;
