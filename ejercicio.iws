@@ -2,9 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40e97cc3-2206-46a1-a49d-d58009817e5e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dominio/proveedorDeClima/Alerta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dominio/accionesConfigurables/GranizoObserver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dominio/accionesConfigurables/RecalculadorDeSugerencias.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dominio/accionesConfigurables/TormentaObserver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ejercicio.iws" beforeDir="false" afterPath="$PROJECT_DIR$/ejercicio.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/proveedorDeClima/ProveedorDeClima.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/proveedorDeClima/ProveedorDeClima.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/RepositorioUsuarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/RepositorioUsuarios.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/proveedorDeClima/Alerta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/proveedorDeClima/AlertaMeteorologica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/proveedorDeClima/ProveedorDeClima.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/proveedorDeClima/RegistroAlertas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/serviciosMetereologicos/RespuestaAccuWeather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/serviciosMeteorologicos/RespuestaAccuWeather.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/serviciosMetereologicos/ServicioMetereologico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/serviciosMeteorologicos/ServicioMeteorologico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/serviciosMetereologicos/ServicioMetereologicoAccuWeather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/serviciosMeteorologicos/ServicioMeteorologicoAccuWeather.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/sugerenciaDiariaObserver/GranizoObserver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/sugerenciaDiariaObserver/PronosticoObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/accionesConfigurables/AccionConfigurable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/sugerenciaDiariaObserver/TormentaObserver.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,9 +183,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -263,6 +274,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="dominio" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration selected="false" default="true" type="Applet" factoryName="Applet">
       <module name="" />
@@ -343,7 +359,7 @@
       <option name="presentableId" value="Default" />
       <updated>1623379521120</updated>
       <workItem from="1623379523475" duration="4896000" />
-      <workItem from="1623448904391" duration="3734000" />
+      <workItem from="1623448904391" duration="9279000" />
     </task>
     <servers />
   </component>

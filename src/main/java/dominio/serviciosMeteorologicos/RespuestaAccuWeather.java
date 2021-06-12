@@ -1,4 +1,4 @@
-package dominio.serviciosMetereologicos;
+package dominio.serviciosMeteorologicos;
 
 import java.time.LocalDateTime;
 import java.util.Map;

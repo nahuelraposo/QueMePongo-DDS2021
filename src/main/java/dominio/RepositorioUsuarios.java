@@ -1,6 +1,6 @@
 package dominio;
 
-import dominio.proveedorDeClima.ProveedorDeClima;
+import dominio.proveedorDeClima.RegistroAlertas;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,7 +8,7 @@ import java.util.List;
 public class RepositorioUsuarios {
   private final static RepositorioUsuarios INSTANCE = new RepositorioUsuarios();
   private List<Usuario> usuarios = new ArrayList<>();
-  private ProveedorDeClima proveedorDeClima;
+  private RegistroAlertas registroAlertas;
 
   public static RepositorioUsuarios getInstance() {
     return INSTANCE;

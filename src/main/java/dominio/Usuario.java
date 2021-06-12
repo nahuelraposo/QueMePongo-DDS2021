@@ -1,36 +1,36 @@
 package dominio;
 
+import dominio.accionesConfigurables.AccionConfigurable;
 import dominio.excepciones.AtuendoNoAptoParaTemperaturaException;
 import dominio.excepciones.SugerenciaIncompletaException;
 import dominio.guardarropa.Guardarropa;
 import dominio.guardarropa.Recomendacion;
 import dominio.notificador.Notificador;
 import dominio.prenda.Prenda;
-import dominio.proveedorDeClima.ProveedorDeClima;
-import dominio.serviciosMetereologicos.ServicioMetereologico;
+import dominio.proveedorDeClima.AlertaMeteorologica;
+import dominio.serviciosMeteorologicos.ServicioMeteorologico;
 import dominio.generadorSugerencia.GeneradorSugerencias;
-import org.mockito.internal.matchers.Not;
 
-import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
 public class Usuario {
     private List<Guardarropa> guardarropas;
-    private ServicioMetereologico servicioMetereologico;
+    private ServicioMeteorologico servicioMeteorologico;
     private GeneradorSugerencias generadorSugerencias;
     private List<Recomendacion> recomendaciones = new ArrayList<>();
     private List<Atuendo> atuendosDiariosSugeridos;
+    private List<AccionConfigurable> accionesConfigurables;
     private String ciudad;
     private String email;
     private Notificador notificador;
 
-    public Usuario(List<Guardarropa> guardarropas, ServicioMetereologico servicioMetereologico, GeneradorSugerencias generadorSugerencias,
+    public Usuario(List<Guardarropa> guardarropas, ServicioMeteorologico servicioMeteorologico, GeneradorSugerencias generadorSugerencias,
                    List<Recomendacion> recomendaciones, List<Atuendo> atuendosDiariosSugeridos,
                    String ciudad, String email, Notificador notificador){
         this.guardarropas = guardarropas;
-        this.servicioMetereologico = servicioMetereologico;
+        this.servicioMeteorologico = servicioMeteorologico;
         this.generadorSugerencias = generadorSugerencias;
         this.recomendaciones = recomendaciones;
         this. atuendosDiariosSugeridos = atuendosDiariosSugeridos;
@@ -39,19 +39,31 @@ public class Usuario {
         this.notificador = notificador;
     }
 
-    public void notificarAlertaMetereologica(String mensaje){
+    public void notificar(String mensaje){
         notificador.notificar(email,mensaje);
-        this.actualizarAtuendosDiariosSugeridos();
     }
 
-    public Object condicionClimatica(String ciudad, BigDecimal hora, ProveedorDeClima proveedorDeClima){
-        return proveedorDeClima.obtenerCondicionClimatica(ciudad,hora);
+    public void realizarAccionesSobreAlertas(List<AlertaMeteorologica> alertasMetereologicasDiarias) {
+        this.getAccionesConfigurables()
+            .forEach(accionConfigurable -> accionConfigurable.nuevasAlertasMeteorologicas(this,alertasMetereologicasDiarias));
+    }
+
+    public void agregarAccion(AccionConfigurable accion){
+        this.getAccionesConfigurables().add(accion);
+    }
+
+    public void quitarAccion(AccionConfigurable accion){
+        this.getAccionesConfigurables().remove(accion);
+    }
+
+    public Object condicionClimatica(String ciudad){
+        return servicioMeteorologico.obtenerCondicionesClimaticas(ciudad);
     }
 
     // acá no se si estaria bien meter un metodo "obtenerUltimasAlertas"
 
     public List<Atuendo> atuendosSugeridos(){
-        Map<String, Object> estadoDelTiempo = servicioMetereologico.obtenerCondicionesClimaticas(ciudad);
+        Map<String, Object> estadoDelTiempo = servicioMeteorologico.obtenerCondicionesClimaticas(ciudad);
         List<Atuendo> atuendosSugeridos = generadorSugerencias.generarSugerenciasDesde(this.prendasEnTotal());
         validarAtuendos(atuendosSugeridos);
         validarAtuendosAptosParaTemperatura(atuendosSugeridos,estadoDelTiempo);
@@ -118,4 +130,7 @@ public class Usuario {
         return recomendaciones;
     }
 
+    public List<AccionConfigurable> getAccionesConfigurables() {
+        return accionesConfigurables;
+    }
 }

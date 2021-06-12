@@ -1,5 +1,5 @@
 package dominio.proveedorDeClima;
 
-public enum Alerta {
+public enum AlertaMeteorologica {
   TORMENTA, GRANIZO
 }
