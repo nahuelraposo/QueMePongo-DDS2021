@@ -1,6 +1,6 @@
-package dominio;
+package dominio.repositorios;
 
-import dominio.proveedorDeClima.RegistroAlertas;
+import dominio.Usuario;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,7 +8,6 @@ import java.util.List;
 public class RepositorioUsuarios {
   private final static RepositorioUsuarios INSTANCE = new RepositorioUsuarios();
   private List<Usuario> usuarios = new ArrayList<>();
-  private RegistroAlertas registroAlertas;
 
   public static RepositorioUsuarios getInstance() {
     return INSTANCE;
@@ -16,6 +15,10 @@ public class RepositorioUsuarios {
 
   public void agregarUsuario(Usuario usuario){
     usuarios.add(usuario);
+  }
+
+  public void quitarUsuario(Usuario usuario){
+    usuarios.remove(usuario);
   }
 
   public void actualizarSugerenciasDiariasDeUsuarios(){

@@ -1,7 +1,7 @@
 package dominio.accionesConfigurables;
 
 import dominio.Usuario;
-import dominio.proveedorDeClima.AlertaMeteorologica;
+import dominio.registroDeAlertas.AlertaMeteorologica;
 
 import java.util.List;
 

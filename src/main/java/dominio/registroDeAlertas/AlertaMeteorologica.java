@@ -1,4 +1,4 @@
-package dominio.proveedorDeClima;
+package dominio.registroDeAlertas;
 
 public enum AlertaMeteorologica {
   TORMENTA, GRANIZO

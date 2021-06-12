@@ -1,6 +1,6 @@
 package dominio.serviciosMeteorologicos;
 
-import dominio.proveedorDeClima.AlertaMeteorologica;
+import dominio.registroDeAlertas.AlertaMeteorologica;
 
 import java.time.LocalDateTime;
 import java.util.List;

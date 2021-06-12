@@ -7,7 +7,7 @@ import dominio.guardarropa.Guardarropa;
 import dominio.guardarropa.Recomendacion;
 import dominio.notificador.Notificador;
 import dominio.prenda.Prenda;
-import dominio.proveedorDeClima.AlertaMeteorologica;
+import dominio.registroDeAlertas.AlertaMeteorologica;
 import dominio.serviciosMeteorologicos.ServicioMeteorologico;
 import dominio.generadorSugerencia.GeneradorSugerencias;
 
@@ -48,20 +48,6 @@ public class Usuario {
             .forEach(accionConfigurable -> accionConfigurable.nuevasAlertasMeteorologicas(this,alertasMetereologicasDiarias));
     }
 
-    public void agregarAccion(AccionConfigurable accion){
-        this.getAccionesConfigurables().add(accion);
-    }
-
-    public void quitarAccion(AccionConfigurable accion){
-        this.getAccionesConfigurables().remove(accion);
-    }
-
-    public Object condicionClimatica(String ciudad){
-        return servicioMeteorologico.obtenerCondicionesClimaticas(ciudad);
-    }
-
-    // acá no se si estaria bien meter un metodo "obtenerUltimasAlertas"
-
     public List<Atuendo> atuendosSugeridos(){
         Map<String, Object> estadoDelTiempo = servicioMeteorologico.obtenerCondicionesClimaticas(ciudad);
         List<Atuendo> atuendosSugeridos = generadorSugerencias.generarSugerenciasDesde(this.prendasEnTotal());
@@ -74,10 +60,6 @@ public class Usuario {
     public void actualizarAtuendosDiariosSugeridos(){
         List<Atuendo> sugerencias = this.atuendosSugeridos();
         this.atuendosDiariosSugeridos = sugerencias;
-    }
-
-    public void agregarRecomendacion(Recomendacion recomendacion) {
-        this.getRecomendaciones().add(recomendacion);
     }
 
     public void aceptarRecomendacion(Recomendacion recomendacion){
@@ -93,16 +75,32 @@ public class Usuario {
         recomendaciones.remove(recomendacion);
     }
 
+    public Object condicionClimatica(String ciudad){
+        return servicioMeteorologico.obtenerCondicionesClimaticas(ciudad);
+    }
+
     public List<Prenda> prendasEnTotal(){
         List<Prenda> prendasTotales = new ArrayList<>();
         this.getGuardarropas().stream().map(guardarropa -> guardarropa.getPrendas()).forEach(guardarropa -> guardarropa.addAll(prendasTotales));
         return  prendasTotales;
     }
 
+    public void agregarGuardarropa(Guardarropa guardarropa){
+        guardarropas.add(guardarropa);
+    }
+
+    public void agregarAccion(AccionConfigurable accion){
+        this.getAccionesConfigurables().add(accion);
+    }
+
+    public void quitarAccion(AccionConfigurable accion){
+        this.getAccionesConfigurables().remove(accion);
+    }
+
     private void validarAtuendosAptosParaTemperatura(List<Atuendo> atuendosSugeridos, Map<String, Object> estadoDelTiempo) {
-            if(!losAtuendosSonAptosParaLaTemperatura(atuendosSugeridos, estadoDelTiempo)){
-                throw new AtuendoNoAptoParaTemperaturaException();
-            }
+        if(!losAtuendosSonAptosParaLaTemperatura(atuendosSugeridos, estadoDelTiempo)){
+            throw new AtuendoNoAptoParaTemperaturaException();
+        }
     }
 
     // en esta parte voy a verificar que cada uno
@@ -115,11 +113,10 @@ public class Usuario {
 
     private boolean losAtuendosSonAptosParaLaTemperatura(List<Atuendo> atuendosSugeridos, Map<String, Object> estadoDelTiempo) {
         return atuendosSugeridos.stream()
-                .allMatch(atuendo -> atuendo.aptoParaTemperatura(estadoDelTiempo));
+            .allMatch(atuendo -> atuendo.aptoParaTemperatura(estadoDelTiempo));
     }
-
-    public void agregarGuardarropa(Guardarropa guardarropa){
-        guardarropas.add(guardarropa);
+    public void agregarRecomendacion(Recomendacion recomendacion) {
+        this.getRecomendaciones().add(recomendacion);
     }
 
     public List<Guardarropa> getGuardarropas(){
@@ -133,4 +130,6 @@ public class Usuario {
     public List<AccionConfigurable> getAccionesConfigurables() {
         return accionesConfigurables;
     }
+
+
 }

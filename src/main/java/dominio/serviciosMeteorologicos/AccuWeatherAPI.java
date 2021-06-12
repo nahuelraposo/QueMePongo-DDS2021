@@ -1,4 +1,4 @@
-package dominio.proveedorDeClima;
+package dominio.serviciosMeteorologicos;
 
 import java.util.*;
 
