@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40e97cc3-2206-46a1-a49d-d58009817e5e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dominio/proveedorDeClima/ProveedorDeClima.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dominio/sugerenciaDiariaObserver/GranizoObserver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dominio/sugerenciaDiariaObserver/PronosticoObserver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dominio/sugerenciaDiariaObserver/TormentaObserver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ejercicio.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/ejercicio.ipr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dominio/proveedorDeClima/Alerta.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ejercicio.iws" beforeDir="false" afterPath="$PROJECT_DIR$/ejercicio.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/AccuWeatherAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/proveedorDeClima/AccuWeatherAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/RepositorioUsuarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/RepositorioUsuarios.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/Usuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/serviciosMetereologicos/ServicioMetereologicoAccuWeather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/serviciosMetereologicos/ServicioMetereologicoAccuWeather.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RecomendacionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RecomendacionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/proveedorDeClima/ProveedorDeClima.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/proveedorDeClima/ProveedorDeClima.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,6 +174,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -287,13 +280,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -347,7 +342,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1623379521120</updated>
-      <workItem from="1623379523475" duration="4300000" />
+      <workItem from="1623379523475" duration="4896000" />
+      <workItem from="1623448904391" duration="3734000" />
     </task>
     <servers />
   </component>
