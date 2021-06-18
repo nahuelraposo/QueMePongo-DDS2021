@@ -1,10 +1,13 @@
 package dominio.accionesConfigurables;
 
 import dominio.Usuario;
+import dominio.registroDeAlertas.AlertaMeteorologica;
 
-public class RecalculadorDeSugerencias {
+import java.util.List;
 
-  public void nuevasAlertasMeteorologicas(Usuario usuario) {
+public class RecalculadorDeSugerencias implements AccionConfigurable{
+
+  public void nuevasAlertasMeteorologicas(Usuario usuario, List<AlertaMeteorologica> alertasMeteorologicas) {
     usuario.actualizarAtuendosDiariosSugeridos();
   }
 }

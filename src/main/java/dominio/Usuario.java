@@ -19,7 +19,7 @@ public class Usuario {
     private List<Guardarropa> guardarropas;
     private ServicioMeteorologico servicioMeteorologico;
     private GeneradorSugerencias generadorSugerencias;
-    private List<Recomendacion> recomendaciones = new ArrayList<>();
+    private List<Recomendacion> recomendaciones;
     private List<Atuendo> atuendosDiariosSugeridos;
     private List<AccionConfigurable> accionesConfigurables;
     private String ciudad;
@@ -28,12 +28,14 @@ public class Usuario {
 
     public Usuario(List<Guardarropa> guardarropas, ServicioMeteorologico servicioMeteorologico, GeneradorSugerencias generadorSugerencias,
                    List<Recomendacion> recomendaciones, List<Atuendo> atuendosDiariosSugeridos,
+                   List<AccionConfigurable> accionesConfigurables,
                    String ciudad, String email, Notificador notificador){
         this.guardarropas = guardarropas;
         this.servicioMeteorologico = servicioMeteorologico;
         this.generadorSugerencias = generadorSugerencias;
         this.recomendaciones = recomendaciones;
         this. atuendosDiariosSugeridos = atuendosDiariosSugeridos;
+        this.accionesConfigurables = accionesConfigurables;
         this.ciudad = ciudad;
         this.email = email;
         this.notificador = notificador;
@@ -106,9 +108,9 @@ public class Usuario {
     // en esta parte voy a verificar que cada uno
     //tenga al menos una prenda para cada categoria
     private void validarAtuendos(List<Atuendo> atuendos) {
-        if(!atuendos.stream().allMatch(atuendo -> atuendo.cumpleCondicion())){
+       /* if(!atuendos.stream().allMatch(atuendo -> atuendo.cumpleCondicion())){
             throw new SugerenciaIncompletaException();
-        }
+        }*/
     }
 
     private boolean losAtuendosSonAptosParaLaTemperatura(List<Atuendo> atuendosSugeridos, Map<String, Object> estadoDelTiempo) {
@@ -131,5 +133,7 @@ public class Usuario {
         return accionesConfigurables;
     }
 
-
+    public List<Atuendo> getAtuendosDiariosSugeridos() {
+        return atuendosDiariosSugeridos;
+    }
 }

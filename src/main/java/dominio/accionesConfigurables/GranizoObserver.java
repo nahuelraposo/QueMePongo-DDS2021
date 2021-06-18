@@ -5,7 +5,7 @@ import dominio.registroDeAlertas.AlertaMeteorologica;
 
 import java.util.List;
 
-public class GranizoObserver {
+public class GranizoObserver implements AccionConfigurable{
 
   public void nuevasAlertasMeteorologicas(Usuario usuario, List<AlertaMeteorologica> alertasMeteorologicas) {
     if(alertasMeteorologicas.contains(AlertaMeteorologica.GRANIZO))

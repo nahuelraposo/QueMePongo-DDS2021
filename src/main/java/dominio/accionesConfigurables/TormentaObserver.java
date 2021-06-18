@@ -5,7 +5,7 @@ import dominio.registroDeAlertas.AlertaMeteorologica;
 
 import java.util.List;
 
-public class TormentaObserver {
+public class TormentaObserver implements AccionConfigurable{
 
   public void nuevasAlertasMeteorologicas(Usuario usuario, List<AlertaMeteorologica> alertasMeteorologicas) {
     if(alertasMeteorologicas.contains(AlertaMeteorologica.TORMENTA))
