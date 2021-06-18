@@ -5,6 +5,7 @@ import dominio.prenda.Prenda;
 
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 public class Atuendo {
     List<Prenda> atuendo;

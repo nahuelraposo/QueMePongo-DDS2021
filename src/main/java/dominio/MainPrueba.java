@@ -40,14 +40,12 @@ public class MainPrueba implements Job{
     borrador1.establecerMaterial(Material.PLASTICO);
     borrador1.establecerColorPrincipal(Color.YELLOW);
     Prenda anteojosDeSol = borrador1.crearPrenda();
-    anteojosDeSol.setTemperaturaApta(api.getWeather("Buenos Aires").get(0).get("Temperature"));
 
     Borrador borrador2 = new Borrador();
     borrador2.establecerTipoPrenda(REMERA_MANGA_CORTA);
     borrador2.establecerMaterial(Material.ALGODON);
     borrador2.establecerColorPrincipal(Color.BLUE);
     Prenda remeraMangasCortasAzul = borrador1.crearPrenda();
-    remeraMangasCortasAzul.setTemperaturaApta(api.getWeather("Buenos Aires").get(0).get("Temperature"));
 
     List<Prenda> prendas = new ArrayList<>();
     prendas.add(anteojosDeSol);

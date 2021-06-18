@@ -30,8 +30,7 @@ public class Prenda {
     //esto hay que reveerlo, tengo que encontrar una forma mejor de
     //implementar la temperatura de la prenda
     public boolean aptaParaTemperatura(Object temperatura) {
-       // return temperatura.equals(temperaturaApta);
-        return true;
+        return temperatura.equals(temperaturaApta);
     }
 
     public void setTemperaturaApta(Object temperaturaApta) {

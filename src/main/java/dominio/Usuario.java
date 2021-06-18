@@ -108,9 +108,9 @@ public class Usuario {
     // en esta parte voy a verificar que cada uno
     //tenga al menos una prenda para cada categoria
     private void validarAtuendos(List<Atuendo> atuendos) {
-       /* if(!atuendos.stream().allMatch(atuendo -> atuendo.cumpleCondicion())){
+        if(!atuendos.stream().allMatch(atuendo -> atuendo.cumpleCondicion())){
             throw new SugerenciaIncompletaException();
-        }*/
+        }
     }
 
     private boolean losAtuendosSonAptosParaLaTemperatura(List<Atuendo> atuendosSugeridos, Map<String, Object> estadoDelTiempo) {
