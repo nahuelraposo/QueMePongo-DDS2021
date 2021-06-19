@@ -8,12 +8,14 @@ import java.util.List;
 public class RegistroAlertas {
   private ServicioMeteorologico servicioMeteorologico;
   private List<AlertaMeteorologica> alertasMetereologicasDiarias;
-  private RepositorioUsuarios repoUsuarios = RepositorioUsuarios.getInstance();
+  private RepositorioUsuarios repoUsuarios;
 
   public RegistroAlertas(ServicioMeteorologico servicioMeteorologico,
-                         List<AlertaMeteorologica> alertasMetereologicas){
+                         List<AlertaMeteorologica> alertasMetereologicas,
+                         RepositorioUsuarios repoUsuarios){
     this.servicioMeteorologico = servicioMeteorologico;
     this.alertasMetereologicasDiarias = alertasMetereologicas;
+    this.repoUsuarios = repoUsuarios;
   }
 
   public void actualizarAlertas(String ciudad){

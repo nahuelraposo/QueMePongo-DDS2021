@@ -1,4 +1,4 @@
-import dominio.MainPrueba;
+import dominio.QueMePongoApp;
 import org.quartz.JobDetail;
 import org.quartz.Scheduler;
 import org.quartz.Trigger;
@@ -6,8 +6,8 @@ import org.quartz.impl.JobDetailImpl;
 import org.quartz.impl.StdSchedulerFactory;
 import org.quartz.impl.triggers.SimpleTriggerImpl;
 
-public class MainAutomaticoQuartz {
-  public static void main(String[] args) {
+public class QuartzQMPApp {
+/*  public static void main(String[] args) {
     String[] argumentos;
 
     try {
@@ -19,7 +19,7 @@ public class MainAutomaticoQuartz {
       JobDetail jobDetail = new JobDetailImpl(
           "HolaMundoJob",
           Scheduler.DEFAULT_GROUP,
-          MainPrueba.class);
+          QueMePongoApp.class);
 
 // Creacion de un Trigger donde indicamos
 //que el Job se
@@ -46,5 +46,7 @@ public class MainAutomaticoQuartz {
       System.out.println("Ocurrió una excepción");
     }
   }
+
+ */
 }
 

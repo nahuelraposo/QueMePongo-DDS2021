@@ -22,17 +22,51 @@ import java.util.Map;
 
 import static dominio.prenda.TipoPrenda.*;
 
-public class MainPrueba implements Job{
+public class QueMePongoApp {
 
-  public void execute(JobExecutionContext jobExecutionContext)
-        throws  JobExecutionException{
-    RepositorioUsuarios repoUsuarios = RepositorioUsuarios.getInstance();
+  //public void execute(JobExecutionContext jobExecutionContext)
+  //      throws  JobExecutionException{
+    public static void main(String[] args){
+    RepositorioUsuarios repoUsuarios = new RepositorioUsuarios();
     AccuWeatherAPI api = new AccuWeatherAPI();
-    ServicioMeteorologico servicioMeteorologico = this.servicioMeteorologicoOverraideado();
+    ServicioMeteorologico servicioMeteorologico = new ServicioMeteorologico() {
+        @Override
+        public Map<String, Object> obtenerCondicionesClimaticas(String direccion) {
+          return api.getWeather("Buenos Aires").get(0);
+        }
+
+        @Override
+        public LocalDateTime proximaExpiracion() {
+          return null;
+        }
+
+        @Override
+        public Map<String, Object> consultarApi(String direccion) {
+          return null;
+        }
+
+        @Override
+        public List<AlertaMeteorologica> obtenerUltimasAlertasMetereologicas(String ciudad) {
+          List<AlertaMeteorologica> alertasMeteorologicas = new ArrayList<>();
+          alertasMeteorologicas.add(AlertaMeteorologica.TORMENTA);
+          alertasMeteorologicas.add(AlertaMeteorologica.GRANIZO);
+          return alertasMeteorologicas;
+        }
+
+        @Override
+        public List<AlertaMeteorologica> adaptarListaDeAlertas(List<String> alertas) {
+          return null;
+        }
+
+        @Override
+        public AlertaMeteorologica adaptarAlerta(String alerta) {
+          return null;
+        }
+      };
 
     List<AlertaMeteorologica> alertasMeteorologicas = new ArrayList<>();
     alertasMeteorologicas.add(AlertaMeteorologica.TORMENTA);
-    RegistroAlertas registroAlertas = new RegistroAlertas(servicioMeteorologico,alertasMeteorologicas);
+    RegistroAlertas registroAlertas = new RegistroAlertas(servicioMeteorologico,alertasMeteorologicas,repoUsuarios);
 
     //Genero prendas
     Borrador borrador1 = new Borrador();
@@ -82,8 +116,6 @@ public class MainPrueba implements Job{
     System.out.println(usuario2.getAtuendosDiariosSugeridos());
     System.out.println(repoUsuarios.getUsuarios());
 
-    repoUsuarios.quitarUsuario(usuario1);
-    repoUsuarios.quitarUsuario(usuario2);
   }
 
 
