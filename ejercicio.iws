@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f880a90-bb72-4fcd-a79f-7e57c11486d8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/configSpark/Bootstrap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/configSpark/Router.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/configSpark/Server.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ejercicio.iws" beforeDir="false" afterPath="$PROJECT_DIR$/ejercicio.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,6 +171,13 @@
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="HIDE_WARNINGS" value="false" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -241,6 +252,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="GoToFile.includeJavaFiles" value="false" />
@@ -252,6 +264,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RecentsManager">
@@ -259,7 +274,7 @@
       <recent name="C:\Users\Nahuel\Repositorios 2021\QueMePongo-DDS2021\DOC - SÉPTIMA ITERACIÓN" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.QuartzQMPApp">
+  <component name="RunManager" selected="Application.QueMePongoApp">
     <configuration selected="false" default="true" type="Applet" factoryName="Applet">
       <module name="" />
       <option name="MAIN_CLASS_NAME" />
@@ -311,8 +326,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.QuartzQMPApp" />
         <item itemvalue="Application.QueMePongoApp" />
+        <item itemvalue="Application.QuartzQMPApp" />
       </list>
     </recent_temporary>
   </component>
@@ -370,6 +385,8 @@
       <workItem from="1634169751154" duration="2653000" />
       <workItem from="1634223155367" duration="68000" />
       <workItem from="1634256722299" duration="3000" />
+      <workItem from="1634520508641" duration="13000" />
+      <workItem from="1635955706492" duration="876000" />
     </task>
     <servers />
   </component>
@@ -422,6 +439,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="VssConfiguration">
     <CheckoutOptions>
