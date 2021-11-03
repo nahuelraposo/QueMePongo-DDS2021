@@ -1,11 +1,11 @@
-import dominio.prenda.Borrador;
-import dominio.excepciones.PrendaIncompletaException;
-import dominio.prenda.*;
+import models.prenda.Borrador;
+import models.excepciones.PrendaIncompletaException;
+import models.prenda.*;
 import org.junit.jupiter.api.Test;
 
 import java.awt.*;
 
-import static dominio.prenda.TipoPrenda.*;
+import static models.prenda.TipoPrenda.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class PrendaTest {

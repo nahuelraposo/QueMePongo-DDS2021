@@ -1,11 +1,3 @@
-import dominio.QueMePongoApp;
-import org.quartz.JobDetail;
-import org.quartz.Scheduler;
-import org.quartz.Trigger;
-import org.quartz.impl.JobDetailImpl;
-import org.quartz.impl.StdSchedulerFactory;
-import org.quartz.impl.triggers.SimpleTriggerImpl;
-
 public class QuartzQMPApp {
 /*  public static void main(String[] args) {
     String[] argumentos;

@@ -1,10 +1,10 @@
-import dominio.prenda.Borrador;
-import dominio.prenda.*;
+import models.prenda.Borrador;
+import models.prenda.*;
 import org.junit.jupiter.api.Test;
 
 import java.awt.*;
 
-import static dominio.prenda.TipoPrenda.*;
+import static models.prenda.TipoPrenda.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 

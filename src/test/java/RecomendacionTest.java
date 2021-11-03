@@ -1,11 +1,10 @@
-import dominio.Usuario;
-import dominio.guardarropa.Guardarropa;
-import dominio.guardarropa.Recomendacion;
-import dominio.guardarropa.RecomendarAgregar;
-import dominio.guardarropa.RecomendarQuitar;
-import dominio.prenda.*;
+import models.Usuario;
+import models.guardarropa.Guardarropa;
+import models.guardarropa.Recomendacion;
+import models.guardarropa.RecomendarAgregar;
+import models.guardarropa.RecomendarQuitar;
+import models.prenda.*;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -13,8 +12,8 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
-import static dominio.prenda.TipoPrenda.ANTEOJOS;
-import static dominio.prenda.TipoPrenda.REMERA_MANGA_CORTA;
+import static models.prenda.TipoPrenda.ANTEOJOS;
+import static models.prenda.TipoPrenda.REMERA_MANGA_CORTA;
 
 public class RecomendacionTest {
   List<Prenda> prendas = new ArrayList<>();
